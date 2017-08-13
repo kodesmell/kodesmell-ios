@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D299F5D01F408B9400794380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299F5CF1F408B9400794380 /* AppDelegate.swift */; };
+		D299F5D21F408B9400794380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299F5D11F408B9400794380 /* ViewController.swift */; };
+		D299F5D51F408B9400794380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D299F5D31F408B9400794380 /* Main.storyboard */; };
+		D299F5D71F408B9400794380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D299F5D61F408B9400794380 /* Assets.xcassets */; };
+		D299F5DA1F408B9400794380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D299F5D81F408B9400794380 /* LaunchScreen.storyboard */; };
+		D299F5E51F408B9400794380 /* kodesmell_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299F5E41F408B9400794380 /* kodesmell_iosTests.swift */; };
+		D299F5F01F408B9400794380 /* kodesmell_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299F5EF1F408B9400794380 /* kodesmell_iosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D299F5E11F408B9400794380 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D299F5C41F408B9400794380 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D299F5CB1F408B9400794380;
+			remoteInfo = "kodesmell-ios";
+		};
+		D299F5EC1F408B9400794380 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D299F5C41F408B9400794380 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D299F5CB1F408B9400794380;
+			remoteInfo = "kodesmell-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D299F5CC1F408B9400794380 /* kodesmell-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kodesmell-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D299F5CF1F408B9400794380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D299F5D11F408B9400794380 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D299F5D41F408B9400794380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D299F5D61F408B9400794380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D299F5D91F408B9400794380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D299F5DB1F408B9400794380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D299F5E01F408B9400794380 /* kodesmell-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kodesmell-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D299F5E41F408B9400794380 /* kodesmell_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kodesmell_iosTests.swift; sourceTree = "<group>"; };
+		D299F5E61F408B9400794380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D299F5EB1F408B9400794380 /* kodesmell-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kodesmell-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D299F5EF1F408B9400794380 /* kodesmell_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kodesmell_iosUITests.swift; sourceTree = "<group>"; };
+		D299F5F11F408B9400794380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D299F5C91F408B9400794380 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D299F5DD1F408B9400794380 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D299F5E81F408B9400794380 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D299F5C31F408B9400794380 = {
+			isa = PBXGroup;
+			children = (
+				D299F5CE1F408B9400794380 /* kodesmell-ios */,
+				D299F5E31F408B9400794380 /* kodesmell-iosTests */,
+				D299F5EE1F408B9400794380 /* kodesmell-iosUITests */,
+				D299F5CD1F408B9400794380 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D299F5CD1F408B9400794380 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D299F5CC1F408B9400794380 /* kodesmell-ios.app */,
+				D299F5E01F408B9400794380 /* kodesmell-iosTests.xctest */,
+				D299F5EB1F408B9400794380 /* kodesmell-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D299F5CE1F408B9400794380 /* kodesmell-ios */ = {
+			isa = PBXGroup;
+			children = (
+				D299F5CF1F408B9400794380 /* AppDelegate.swift */,
+				D299F5D11F408B9400794380 /* ViewController.swift */,
+				D299F5D31F408B9400794380 /* Main.storyboard */,
+				D299F5D61F408B9400794380 /* Assets.xcassets */,
+				D299F5D81F408B9400794380 /* LaunchScreen.storyboard */,
+				D299F5DB1F408B9400794380 /* Info.plist */,
+			);
+			path = "kodesmell-ios";
+			sourceTree = "<group>";
+		};
+		D299F5E31F408B9400794380 /* kodesmell-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				D299F5E41F408B9400794380 /* kodesmell_iosTests.swift */,
+				D299F5E61F408B9400794380 /* Info.plist */,
+			);
+			path = "kodesmell-iosTests";
+			sourceTree = "<group>";
+		};
+		D299F5EE1F408B9400794380 /* kodesmell-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D299F5EF1F408B9400794380 /* kodesmell_iosUITests.swift */,
+				D299F5F11F408B9400794380 /* Info.plist */,
+			);
+			path = "kodesmell-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D299F5CB1F408B9400794380 /* kodesmell-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D299F5F41F408B9400794380 /* Build configuration list for PBXNativeTarget "kodesmell-ios" */;
+			buildPhases = (
+				D299F5C81F408B9400794380 /* Sources */,
+				D299F5C91F408B9400794380 /* Frameworks */,
+				D299F5CA1F408B9400794380 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kodesmell-ios";
+			productName = "kodesmell-ios";
+			productReference = D299F5CC1F408B9400794380 /* kodesmell-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D299F5DF1F408B9400794380 /* kodesmell-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D299F5F71F408B9400794380 /* Build configuration list for PBXNativeTarget "kodesmell-iosTests" */;
+			buildPhases = (
+				D299F5DC1F408B9400794380 /* Sources */,
+				D299F5DD1F408B9400794380 /* Frameworks */,
+				D299F5DE1F408B9400794380 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D299F5E21F408B9400794380 /* PBXTargetDependency */,
+			);
+			name = "kodesmell-iosTests";
+			productName = "kodesmell-iosTests";
+			productReference = D299F5E01F408B9400794380 /* kodesmell-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D299F5EA1F408B9400794380 /* kodesmell-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D299F5FA1F408B9400794380 /* Build configuration list for PBXNativeTarget "kodesmell-iosUITests" */;
+			buildPhases = (
+				D299F5E71F408B9400794380 /* Sources */,
+				D299F5E81F408B9400794380 /* Frameworks */,
+				D299F5E91F408B9400794380 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D299F5ED1F408B9400794380 /* PBXTargetDependency */,
+			);
+			name = "kodesmell-iosUITests";
+			productName = "kodesmell-iosUITests";
+			productReference = D299F5EB1F408B9400794380 /* kodesmell-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D299F5C41F408B9400794380 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Kodesmell;
+				TargetAttributes = {
+					D299F5CB1F408B9400794380 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					D299F5DF1F408B9400794380 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D299F5CB1F408B9400794380;
+					};
+					D299F5EA1F408B9400794380 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D299F5CB1F408B9400794380;
+					};
+				};
+			};
+			buildConfigurationList = D299F5C71F408B9400794380 /* Build configuration list for PBXProject "kodesmell-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D299F5C31F408B9400794380;
+			productRefGroup = D299F5CD1F408B9400794380 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D299F5CB1F408B9400794380 /* kodesmell-ios */,
+				D299F5DF1F408B9400794380 /* kodesmell-iosTests */,
+				D299F5EA1F408B9400794380 /* kodesmell-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D299F5CA1F408B9400794380 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D299F5DA1F408B9400794380 /* LaunchScreen.storyboard in Resources */,
+				D299F5D71F408B9400794380 /* Assets.xcassets in Resources */,
+				D299F5D51F408B9400794380 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D299F5DE1F408B9400794380 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D299F5E91F408B9400794380 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D299F5C81F408B9400794380 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D299F5D21F408B9400794380 /* ViewController.swift in Sources */,
+				D299F5D01F408B9400794380 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D299F5DC1F408B9400794380 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D299F5E51F408B9400794380 /* kodesmell_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D299F5E71F408B9400794380 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D299F5F01F408B9400794380 /* kodesmell_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D299F5E21F408B9400794380 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D299F5CB1F408B9400794380 /* kodesmell-ios */;
+			targetProxy = D299F5E11F408B9400794380 /* PBXContainerItemProxy */;
+		};
+		D299F5ED1F408B9400794380 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D299F5CB1F408B9400794380 /* kodesmell-ios */;
+			targetProxy = D299F5EC1F408B9400794380 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D299F5D31F408B9400794380 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D299F5D41F408B9400794380 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D299F5D81F408B9400794380 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D299F5D91F408B9400794380 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D299F5F21F408B9400794380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D299F5F31F408B9400794380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D299F5F51F408B9400794380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "kodesmell-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kodesmell.kodesmell-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D299F5F61F408B9400794380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "kodesmell-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kodesmell.kodesmell-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D299F5F81F408B9400794380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "kodesmell-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kodesmell.kodesmell-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kodesmell-ios.app/kodesmell-ios";
+			};
+			name = Debug;
+		};
+		D299F5F91F408B9400794380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "kodesmell-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kodesmell.kodesmell-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kodesmell-ios.app/kodesmell-ios";
+			};
+			name = Release;
+		};
+		D299F5FB1F408B9400794380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "kodesmell-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kodesmell.kodesmell-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "kodesmell-ios";
+			};
+			name = Debug;
+		};
+		D299F5FC1F408B9400794380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "kodesmell-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kodesmell.kodesmell-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "kodesmell-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D299F5C71F408B9400794380 /* Build configuration list for PBXProject "kodesmell-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299F5F21F408B9400794380 /* Debug */,
+				D299F5F31F408B9400794380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D299F5F41F408B9400794380 /* Build configuration list for PBXNativeTarget "kodesmell-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299F5F51F408B9400794380 /* Debug */,
+				D299F5F61F408B9400794380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D299F5F71F408B9400794380 /* Build configuration list for PBXNativeTarget "kodesmell-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299F5F81F408B9400794380 /* Debug */,
+				D299F5F91F408B9400794380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D299F5FA1F408B9400794380 /* Build configuration list for PBXNativeTarget "kodesmell-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299F5FB1F408B9400794380 /* Debug */,
+				D299F5FC1F408B9400794380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D299F5C41F408B9400794380 /* Project object */;
+}
