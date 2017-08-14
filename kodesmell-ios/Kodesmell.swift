@@ -17,9 +17,8 @@ struct Kodesmell {
     var code:String
     var fileName:String
     var lineNumber:Int
-    var project:Project? = nil
     
-//    static func kodesmellsFromJSONArray(jsonArray: [JSON]) -> [Kodesmell]? {
+//    static func kodesmellsFromJSONArray(jsonArray: [JSON]) -> [Kodesmell?] {
 //        return jsonArray.flatMap{ jsonItem -> Kodesmell in
 //            guard let id = jsonItem["id"].string,
 //                let message = jsonItem["message"].string,
@@ -27,6 +26,7 @@ struct Kodesmell {
 //                let code = jsonItem["message"].string,
 //                let fileName = jsonItem["message"].string,
 //                let lineNumber = jsonItem["message"].int
+//                
 //                else { return nil }
 //            
 //            return Kodesmell(id: id,
@@ -34,8 +34,7 @@ struct Kodesmell {
 //                             hash:hash,
 //                             code:code,
 //                             fileName:fileName,
-//                             lineNumber:lineNumber,
-//                             project:nil)
+//                             lineNumber:lineNumber)
 //        }
 //    }
 }

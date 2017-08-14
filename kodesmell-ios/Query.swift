@@ -12,7 +12,7 @@ import Alamofire
 public func getKodeSmells() -> DataRequest{
     
     let parameters: Parameters = [
-        "query": "{\n  kodes{\n    id,\n    fileName\n  }\n}"
+        "query": "{\n  kodes{\n    id,\n    message,\n    hash,\n    code,\n    fileName ,\n    lineNumber   }\n}"
     ]
     return Alamofire
         .request("http://192.168.35.167:8000/graphql",
