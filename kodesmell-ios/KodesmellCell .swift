@@ -10,8 +10,7 @@ import Foundation
 import UIKit
 
 class KodesmellCell: UITableViewCell {
-
     @IBOutlet weak var tvMessage: UILabel!
-    @IBOutlet weak var tvCode: UILabel!
+    @IBOutlet weak var tvCode: UITextView!
 
 }

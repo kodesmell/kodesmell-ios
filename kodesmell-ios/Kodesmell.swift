@@ -17,24 +17,39 @@ struct Kodesmell {
     var code:String
     var fileName:String
     var lineNumber:Int
+    var shortCode:String
     
-//    static func kodesmellsFromJSONArray(jsonArray: [JSON]) -> [Kodesmell?] {
-//        return jsonArray.flatMap{ jsonItem -> Kodesmell in
-//            guard let id = jsonItem["id"].string,
-//                let message = jsonItem["message"].string,
-//                let hash = jsonItem["message"].string,
-//                let code = jsonItem["message"].string,
-//                let fileName = jsonItem["message"].string,
-//                let lineNumber = jsonItem["message"].int
-//                
-//                else { return nil }
-//            
-//            return Kodesmell(id: id,
-//                             message: message,
-//                             hash:hash,
-//                             code:code,
-//                             fileName:fileName,
-//                             lineNumber:lineNumber)
-//        }
-//    }
-}
+    static func kodesmellFromJSONObject(jsonObject: JSON) -> Kodesmell? {
+        guard let id = jsonObject["id"].string,
+                        let message = jsonObject["message"].string,
+                        let hash = jsonObject["hash"].string,
+                        let code = jsonObject["code"].string,
+                        let fileName = jsonObject["fileName"].string,
+                        let lineNumber = jsonObject["lineNumber"].int
+        else {
+            return nil
+        }
+                
+        return Kodesmell(id: id,
+                             message: message,
+                             hash:hash,
+                             code:code,
+                             fileName:fileName,
+                             lineNumber:lineNumber,
+                             shortCode:getShortCode(lines: code.lines, lineNumber: lineNumber))
+        }
+    }
+
+    func getShortCode(lines:[String], lineNumber:Int) -> String {
+        var resultString = ""
+        for index in (lineNumber-4)...(lineNumber+3) {
+            resultString += lines[index] + "\n"
+        }
+        return resultString
+    }
+
+
+
+
+    
+
