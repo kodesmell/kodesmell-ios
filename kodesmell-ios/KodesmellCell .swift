@@ -11,6 +11,8 @@ import UIKit
 
 class KodesmellCell: UITableViewCell {
     @IBOutlet weak var tvMessage: UILabel!
-    @IBOutlet weak var tvCode: UITextView!
+    @IBOutlet weak var svCode: UIScrollView!
+    @IBOutlet weak var lbCode: UILabel!
+    @IBOutlet weak var btnView: UIButton!
 
 }

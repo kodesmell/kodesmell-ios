@@ -16,6 +16,10 @@ class MainController: UITableViewController{
 //    @IBOutlet weak var messageLabel: UILabel!
     var kodesmells : [Kodesmell] = []
 
+    @IBAction func touchButton(_ sender: UIButton) {
+        let kodesmell = kodesmells[sender.tag]
+        print(kodesmell.message)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,23 +54,50 @@ class MainController: UITableViewController{
         return kodesmells.count
     }
     
+
     // 셀 내용 변경하기 (tableView 구현 필수)
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "Cell")
         let cell = tableView.dequeueReusableCell(withIdentifier:"Kodesmell" , for: indexPath) as! KodesmellCell
         cell.tvMessage?.text = kodesmells[indexPath.row].message
-
+        
+        
         let highlightr = Highlightr()
         highlightr?.setTheme(to: "paraiso-dark")
         let code = kodesmells[indexPath.row].shortCode
-
+        
         // You can omit the second parameter to use automatic language detection.
         let highlightedCode = highlightr?.highlight(code, as: "Java")
-    
-        cell.tvCode?.attributedText = highlightedCode
         
-//        messageLabel.text = titles[indexPath.row]
+        guard let height = highlightedCode?.size().height ,
+            let width = highlightedCode?.size().width
+            else {
+                return cell
+            }
+        
+        cell.btnView?.tag = indexPath.row
+        
+//        cell.lbCode?.sizeThatFits(CGSize(width: width, height: height))
+//        cell.lbCode?.attributedText = highlightedCode
+        
+        cell.svCode.contentSize.width = width + 10
+        cell.svCode.contentSize.height = height + 10
+        
+
+        cell.lbCode?.frame = CGRect(x: (cell.lbCode?.frame.origin.x)!,
+                                    y: (cell.lbCode?.frame.origin.y)!,
+                                    width: width + 10,
+                                    height: height + 10)
+        cell.lbCode?.attributedText = highlightedCode
+        cell.lbCode?.sizeToFit()
+        
+        
+//        cell.btnView?.addTarget(self, action: , for: .touchUpInside)
         return cell
+    }
+    
+    func touchButtonn() {
+        print("a")
     }
     
 }
