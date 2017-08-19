@@ -12,7 +12,7 @@ import SwiftyJSON
 
 struct Kodesmell {
     var id: String
-    var message: String? = nil
+    var message: String
     var hash: String
     var code:String
     var fileName:String

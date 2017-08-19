@@ -95,16 +95,17 @@
                     <navigationItem key="navigationItem" title="Kodesmell" id="W7B-fe-LZx"/>
                     <connections>
                         <outlet property="tableView" destination="bPW-Gh-qkt" id="6E7-Ai-2WV"/>
+                        <segue destination="OB3-Wz-gLD" kind="show" identifier="segNext" id="vJf-mv-nn4"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ea-eq-AI3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1287.2" y="750.67466266866575"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Controller-->
         <scene sceneID="DKR-ku-hUU">
             <objects>
-                <viewController id="OB3-Wz-gLD" sceneMemberID="viewController">
+                <viewController id="OB3-Wz-gLD" customClass="DetailController" customModule="kodesmell_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yPh-Xr-5gs"/>
                         <viewControllerLayoutGuide type="bottom" id="gZS-Oo-v4h"/>
@@ -112,12 +113,45 @@
                     <view key="view" contentMode="scaleToFill" id="H23-kI-gpy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHt-RK-4MD">
+                                <rect key="frame" x="12" y="64" width="351" height="42"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZKg-BH-axZ">
+                                <rect key="frame" x="0.0" y="109" width="375" height="558"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cV3-z5-XnQ">
+                                        <rect key="frame" x="6.5" y="7.5" width="360.5" height="540.5"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Label">
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="cellTitle"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="lbCode" destination="cV3-z5-XnQ" id="8vw-ih-YFv"/>
+                        <outlet property="lblMessage" destination="VHt-RK-4MD" id="f4w-A2-71u"/>
+                        <outlet property="svCode" destination="ZKg-BH-axZ" id="ixv-d2-Xlq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e3m-le-eqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-346" y="746"/>
+            <point key="canvasLocation" x="-239.19999999999999" y="750.67466266866575"/>
         </scene>
     </scenes>
 </document>

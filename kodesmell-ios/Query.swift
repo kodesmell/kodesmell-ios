@@ -15,7 +15,7 @@ public func getKodeSmells() -> DataRequest{
         "query": "{\n  kodes{\n    id,\n    message,\n    hash,\n    code,\n    fileName ,\n    lineNumber   }\n}"
     ]
     return Alamofire
-        .request("http://192.168.35.167:8000/graphql",
+        .request("http://211.243.245.159:8000/graphql",
                  method:.post,
                  parameters:parameters,
                  encoding: JSONEncoding.default)

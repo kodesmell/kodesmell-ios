@@ -15,7 +15,6 @@
 		D2065D041F41DA1700D4D9A4 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2065D031F41DA1700D4D9A4 /* Query.swift */; };
 		D2065D081F41DC0400D4D9A4 /* Kodesmell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2065D071F41DC0400D4D9A4 /* Kodesmell.swift */; };
 		D299F5D01F408B9400794380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299F5CF1F408B9400794380 /* AppDelegate.swift */; };
-		D299F5D21F408B9400794380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299F5D11F408B9400794380 /* ViewController.swift */; };
 		D299F5D51F408B9400794380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D299F5D31F408B9400794380 /* Main.storyboard */; };
 		D299F5D71F408B9400794380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D299F5D61F408B9400794380 /* Assets.xcassets */; };
 		D299F5DA1F408B9400794380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D299F5D81F408B9400794380 /* LaunchScreen.storyboard */; };
@@ -23,6 +22,7 @@
 		D299F5F01F408B9400794380 /* kodesmell_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299F5EF1F408B9400794380 /* kodesmell_iosUITests.swift */; };
 		D2C5481A1F42007E00C78D68 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C548191F42007E00C78D68 /* MainController.swift */; };
 		D2C548211F42183F00C78D68 /* KodesmellCell .swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C548201F42183F00C78D68 /* KodesmellCell .swift */; };
+		D2CC184C1F485F1B00009044 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC184B1F485F1B00009044 /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,6 @@
 		D2065D071F41DC0400D4D9A4 /* Kodesmell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kodesmell.swift; sourceTree = "<group>"; };
 		D299F5CC1F408B9400794380 /* kodesmell-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kodesmell-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D299F5CF1F408B9400794380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D299F5D11F408B9400794380 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D299F5D41F408B9400794380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D299F5D61F408B9400794380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D299F5D91F408B9400794380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,6 +66,7 @@
 		D299F5F11F408B9400794380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2C548191F42007E00C78D68 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		D2C548201F42183F00C78D68 /* KodesmellCell .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KodesmellCell .swift"; sourceTree = "<group>"; };
+		D2CC184B1F485F1B00009044 /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		D8D82AE0EEB441B301B5C33F /* Pods-kodesmell-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kodesmell-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kodesmell-iosTests/Pods-kodesmell-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		DFCA66CBD0EE3E1B0CBE823F /* Pods-kodesmell-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kodesmell-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kodesmell-iosUITests/Pods-kodesmell-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E9FBBC75A48A9F8E62DB6241 /* Pods_kodesmell_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kodesmell_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,18 +165,17 @@
 		D299F5CE1F408B9400794380 /* kodesmell-ios */ = {
 			isa = PBXGroup;
 			children = (
+				D2CC184A1F485EF500009044 /* Controller */,
 				D2C5481F1F42183100C78D68 /* CustomView */,
 				D2065D061F41DBF500D4D9A4 /* Model */,
 				D2065D051F41DBDD00D4D9A4 /* GraphQL */,
 				D299F5CF1F408B9400794380 /* AppDelegate.swift */,
-				D299F5D11F408B9400794380 /* ViewController.swift */,
 				D299F5D31F408B9400794380 /* Main.storyboard */,
 				D299F5D61F408B9400794380 /* Assets.xcassets */,
 				D299F5D81F408B9400794380 /* LaunchScreen.storyboard */,
 				D299F5DB1F408B9400794380 /* Info.plist */,
 				D2065CFE1F41D6EA00D4D9A4 /* extension.swift */,
 				D2065D001F41D8BE00D4D9A4 /* Const.swift */,
-				D2C548191F42007E00C78D68 /* MainController.swift */,
 			);
 			path = "kodesmell-ios";
 			sourceTree = "<group>";
@@ -205,6 +204,15 @@
 				D2C548201F42183F00C78D68 /* KodesmellCell .swift */,
 			);
 			name = CustomView;
+			sourceTree = "<group>";
+		};
+		D2CC184A1F485EF500009044 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2C548191F42007E00C78D68 /* MainController.swift */,
+				D2CC184B1F485F1B00009044 /* DetailController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,8 +522,8 @@
 				D2065CFF1F41D6EA00D4D9A4 /* extension.swift in Sources */,
 				D2065D011F41D8BE00D4D9A4 /* Const.swift in Sources */,
 				D2C548211F42183F00C78D68 /* KodesmellCell .swift in Sources */,
-				D299F5D21F408B9400794380 /* ViewController.swift in Sources */,
 				D2065D081F41DC0400D4D9A4 /* Kodesmell.swift in Sources */,
+				D2CC184C1F485F1B00009044 /* DetailController.swift in Sources */,
 				D299F5D01F408B9400794380 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

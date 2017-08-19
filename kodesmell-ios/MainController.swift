@@ -15,10 +15,10 @@ class MainController: UITableViewController{
     
 //    @IBOutlet weak var messageLabel: UILabel!
     var kodesmells : [Kodesmell] = []
-
+    var selectedIndex :Int? = nil
     @IBAction func touchButton(_ sender: UIButton) {
-        let kodesmell = kodesmells[sender.tag]
-        print(kodesmell.message)
+        selectedIndex = sender.tag
+        performSegue(withIdentifier: "segNext", sender: self)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +48,13 @@ class MainController: UITableViewController{
     }
     
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let send = segue.destination as! DetailController
+        if let index = selectedIndex {
+            send.kodesmell = kodesmells[index]
+
+        }
+    }
     
     // 테이블 행수 얻기 (tableView 구현 필수)
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,6 +68,7 @@ class MainController: UITableViewController{
         let cell = tableView.dequeueReusableCell(withIdentifier:"Kodesmell" , for: indexPath) as! KodesmellCell
         cell.tvMessage?.text = kodesmells[indexPath.row].message
         
+        cell.btnView?.tag = indexPath.row
         
         let highlightr = Highlightr()
         highlightr?.setTheme(to: "paraiso-dark")
@@ -75,10 +83,6 @@ class MainController: UITableViewController{
                 return cell
             }
         
-        cell.btnView?.tag = indexPath.row
-        
-//        cell.lbCode?.sizeThatFits(CGSize(width: width, height: height))
-//        cell.lbCode?.attributedText = highlightedCode
         
         cell.svCode.contentSize.width = width + 10
         cell.svCode.contentSize.height = height + 10
@@ -90,14 +94,9 @@ class MainController: UITableViewController{
                                     height: height + 10)
         cell.lbCode?.attributedText = highlightedCode
         cell.lbCode?.sizeToFit()
-        
-        
-//        cell.btnView?.addTarget(self, action: , for: .touchUpInside)
+
         return cell
     }
     
-    func touchButtonn() {
-        print("a")
-    }
     
 }
