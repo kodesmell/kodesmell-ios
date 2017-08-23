@@ -42,14 +42,36 @@ struct Kodesmell {
 
     func getShortCode(lines:[String], lineNumber:Int) -> String {
         var resultString = ""
-        for index in (lineNumber-4)...(lineNumber+3) {
+        let index = getShortCodeRange(lines: lines, lineNumber: lineNumber)
+        for index in index.startIndex...index.lastIndex {
             resultString += lines[index] + "\n"
         }
         return resultString
     }
 
+func getShortCodeRange(lines:[String], lineNumber:Int) -> (startIndex:Int, lastIndex:Int){
 
-
-
+    if lines.count < 8 {
+        return (0, lines.endIndex)
+    }
     
+    var startIndex = lineNumber - 4
+    var endIndex = lineNumber + 3
+    
+    while !(startIndex >= 0 &&
+        endIndex <= lines.endIndex) {
+            if (startIndex < 0) {
+                startIndex += 1
+                endIndex += 1
+            } else if (endIndex > lines.endIndex) {
+                startIndex -= 1
+                endIndex -= 1
+            }
+    }
+    return (startIndex, endIndex)
+}
+
+
+
+
 
